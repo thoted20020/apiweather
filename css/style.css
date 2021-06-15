@@ -1,0 +1,127 @@
+:root {
+    --fuenteHeading: 'PT Sans', sans-serif;
+    --fuenteParrafos: 'Open Sans', sans-serif;
+
+    --primario: #e5be01;
+    --blanco: #ffffff;
+    --negro: #000000;
+    --gris: #e1e1e1;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--fuenteParrafos);
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+.contenedor {
+    max-width: 100rem;
+    width: 95%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 8rem;
+}
+
+h2 {
+    font-size: 5rem;
+}
+
+h3 {
+    font-size: 4.5rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1,h2,h3 {
+    margin: 0;
+    font-family: var(--fuenteHeading);
+}
+
+.index {
+  background-image: url(../img/img_weather1.jpg);
+  background-size: cover;
+  background-position: 20% 50%;
+}
+
+.registro {
+  background-image: url(../img/img_weather2.jpg);
+  background-size: cover;
+  background-position: 20% 50%;
+}
+
+.login {
+  background-image: url(../img/img_weather3.jpg);
+  background-size: cover;
+  background-position: 20% 50%;
+  background-repeat: no-repeat;
+}
+
+.barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: var(--blanco);
+}
+
+.logo__nombre {
+    font-weight: 400;
+}
+
+.logo__bold {
+    font-weight: 700;
+}
+
+.navegacion {
+    display: flex;
+    gap: 2rem;
+}
+
+.navegacion__enlace {
+    color: var(--blanco);
+    font-size: 3rem;
+}
+
+.texto {
+    color: var(--blanco);
+    text-align: center;
+    padding-top: 15rem;
+    line-height: 7rem;
+}
+
+.texto__titulo {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+
+@media (max-width: 500px) {
+    .barra {
+        display: block;
+        text-align: center;
+    }
+
+    .navegacion {
+        flex-direction: column;
+        gap: 0rem;
+    }
+}
