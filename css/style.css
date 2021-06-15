@@ -3,6 +3,7 @@
     --fuenteParrafos: 'Open Sans', sans-serif;
 
     --primario: #e5be01;
+    --secundario: #B0E0E6;
     --blanco: #ffffff;
     --negro: #000000;
     --gris: #e1e1e1;
@@ -63,13 +64,13 @@ h1,h2,h3 {
 .registro {
   background-image: url(../img/img_weather2.jpg);
   background-size: cover;
-  background-position: 20% 50%;
+  background-position: 0% 40%;
 }
 
 .login {
   background-image: url(../img/img_weather3.jpg);
   background-size: cover;
-  background-position: 20% 50%;
+  background-position: 70% 70%;
   background-repeat: no-repeat;
 }
 
@@ -113,6 +114,77 @@ h1,h2,h3 {
     margin-bottom: 4rem;
 }
 
+.contenedor-formulario {
+    margin-top: 7rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contenedor-formulario h2{
+    color: var(--blanco);
+    font-size: 3rem;
+    text-align: center;
+}
+
+.caja-login {
+    background-color: #F2F2F2;
+    border: 1px solid #707070;
+    max-width: 65rem;
+    width: 90%;
+    margin: 0 auto;
+    min-height: 300px;
+    -webkit-box-shadow: 0px 25px 35px -17px rgba(0,0,0,0.56);
+    -moz-box-shadow: 0px 25px 35px -17px rgba(0,0,0,0.56);
+    box-shadow: 0px 25px 35px -17px rgba(0,0,0,0.56);
+    padding: 3rem;
+
+    margin-bottom: 5rem;
+}
+
+.campo {
+    display: flex;
+    margin-bottom: 2rem;
+    align-items: center;
+}
+
+.campo label {
+    flex: 0 0 100px;
+    text-align: right;
+    padding-right: 1rem;
+}
+
+.campo input[type="text"],
+.campo input[type="password"] {
+    height: 3rem;
+    border: 0;
+    flex: 1;
+    border: 1px solid #455A64;
+    border-radius: 5rem;
+    padding-left: 2rem;
+}
+
+.enviar {
+  margin-top: 4rem;
+   justify-content: flex-end;
+}
+
+.boton {
+    background-color: var(--secundario);
+    text-align: center;
+    transition: background-color .5s ease-in-out;
+    display: block;
+    padding: 1rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    border: none;
+    font-weight: 900;
+}
+
+.boton:hover {
+    cursor: pointer;
+    background-color: var(--primario);
+}
 
 @media (max-width: 500px) {
     .barra {

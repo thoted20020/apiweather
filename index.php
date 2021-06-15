@@ -1,5 +1,6 @@
 <?php
   include 'inc/funciones/funciones.php';
+  include 'inc/funciones/conexion.php';
   include 'inc/templates/header.php';
 ?>
 
@@ -24,5 +25,7 @@
         <h1>Plataforma climatica</h1>
         <h3 class="texto__titulo">Proporcionamos datos metereologicos de tu ciudad</h3>
     </div>
-</body>
-</html>
+    
+<?php
+  include 'inc/templates/footer.php';
+?>

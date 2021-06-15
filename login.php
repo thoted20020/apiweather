@@ -1,6 +1,7 @@
 <?php
   include 'inc/funciones/funciones.php';
-  include 'inc/templates/header.php';  
+  include 'inc/funciones/conexion.php';
+  include 'inc/templates/header.php';
 ?>
   <div class="contenedor">
     <div class="barra">
