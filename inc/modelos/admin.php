@@ -17,7 +17,7 @@ if($accion === 'crear'){
   include '../funciones/conexion.php';
 
   try {
-    $stmt = $conn->prepare("INSERT INTO usuarios (usuario, password, pais, ciudad) VALUES (?, ?, ?, ?) ");
+    $stmt = $conn->prepare("INSERT INTO usuarios ('usuario', 'password', 'pais', 'ciudad') VALUES (?, ?, ?, ?) ");
     $stmt->bind_param('ssss', $usuario , $hash_password , $pais , $ciudad);
     $stmt->execute();
     $stmt->close();
